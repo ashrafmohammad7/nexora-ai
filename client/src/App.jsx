@@ -1,7 +1,23 @@
 import { FaUpload, FaChartBar, FaBrain } from "react-icons/fa";
 import ResumeUpload from "./components/ResumeUpload";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 function App() {
+  const [backendMessage, setBackendMessage] = useState("");
+
+useEffect(() => {
+
+  axios
+    .get("http://localhost:8080/api/status")
+    .then((res) => {
+      setBackendMessage(res.data.status);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+
+}, []);
   return (
     <div className="min-h-screen bg-slate-900 text-white">
 
@@ -41,6 +57,10 @@ function App() {
           Analyze resumes, detect skill gaps, predict placement readiness,
           and empower students with AI-driven career intelligence.
         </p>
+        
+        <p className="mt-4 text-green-400 font-semibold">
+  {backendMessage}
+</p>
 
         {/* CTA Button */}
         <button className="mt-8 bg-cyan-500 hover:bg-cyan-600 transition px-8 py-3 rounded-xl text-lg font-semibold shadow-lg shadow-cyan-500/20">
