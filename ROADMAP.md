@@ -1,27 +1,31 @@
 # Nexora AI Roadmap
 
-## Phase 1
-- Project setup
-- Resume upload
+# Phase 1
+- React frontend setup
+- Tailwind dashboard UI
+- Resume upload system
+- FastAPI AI microservice
+
+# Phase 2
+- Spring Boot backend
+- Authentication system
+- PostgreSQL integration
+- API gateway setup
+
+# Phase 3
+- AI skill extraction
 - Resume parsing
-- Skill extraction
-
-## Phase 2
+- Readiness scoring
 - Skill gap analysis
-- Job readiness score
-- Recommendation engine
 
-## Phase 3
-- Dashboard analytics
-- Charts & reports
-- Placement prediction
+# Phase 4
+- Recruiter dashboard
+- Placement analytics
+- College heatmaps
+- Candidate ranking
 
-## Phase 4
-- Recruiter portal
-- College analytics
-- AI interview assistant
-
-## Phase 5
+# Phase 5
+- AI recommendations
+- Interview analysis
 - SaaS deployment
-- Multi-college onboarding
-- Scalable AI infrastructure
+- Scalable infrastructure

@@ -1,20 +1,82 @@
 # Nexora AI Architecture
 
-## High-Level Architecture
+# High-Level Architecture
 
 ```text
-Frontend (React)
-        ↓
-Backend API (FastAPI)
-        ↓
-AI Engine (Python + NLP)
-        ↓
-Database (PostgreSQL)
+                React Frontend
+                       ↓
+             Spring Boot Backend
+                       ↓
+             Python AI Microservice
+                       ↓
+                 PostgreSQL
 ```
 
 ---
 
-## AI Workflow
+# Frontend Layer
+
+## Responsibilities
+- Dashboard UI
+- Resume Upload
+- Analytics Visualization
+- User Interaction
+
+## Technologies
+- React
+- Tailwind CSS
+- Axios
+
+---
+
+# Backend Layer (Spring Boot)
+
+## Responsibilities
+- Authentication
+- REST APIs
+- JWT Security
+- Database Management
+- User Management
+
+## Technologies
+- Spring Boot
+- Spring Security
+- Hibernate
+- JPA
+
+---
+
+# AI Layer (FastAPI)
+
+## Responsibilities
+- Resume Parsing
+- NLP Processing
+- Skill Detection
+- Recommendation Engine
+- Placement Prediction
+
+## Technologies
+- FastAPI
+- spaCy
+- scikit-learn
+- pdfplumber
+
+---
+
+# Database Layer
+
+## Responsibilities
+- User Data
+- Resume Data
+- Analytics Data
+- Placement Reports
+
+## Technologies
+- PostgreSQL
+
+---
+
+# AI Workflow
 
 ```text
 Resume Upload
@@ -23,36 +85,11 @@ Resume Parsing
       ↓
 Skill Extraction
       ↓
-Industry Skill Mapping
+Industry Mapping
       ↓
-Skill Gap Analysis
+Skill Gap Detection
       ↓
-Job Readiness Score
+Readiness Score
       ↓
 Recommendations
 ```
-
----
-
-## Core Modules
-
-### Frontend
-- Dashboard UI
-- Resume Upload
-- Analytics Visualizations
-
-### Backend
-- Authentication
-- APIs
-- Role Matching Logic
-
-### AI Engine
-- NLP Resume Parser
-- Skill Matching Engine
-- Prediction Models
-
-### Database
-- User Data
-- Resume Data
-- Skill Taxonomy
-- Analytics

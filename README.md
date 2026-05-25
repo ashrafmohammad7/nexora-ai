@@ -4,60 +4,96 @@
 
 ---
 
-## Problem Statement
+# 🚀 Overview
 
-Students often prepare for placements without understanding real industry skill requirements.
+Nexora AI is an enterprise-grade employability intelligence platform designed to bridge the gap between students, colleges, and recruiters using AI-powered analytics.
 
-Colleges lack predictive placement analytics.
-
-Recruiters receive thousands of resumes without verified skill intelligence.
-
-Nexora AI bridges this gap using AI-driven employability analysis.
+The platform analyzes resumes, extracts skills using NLP, compares them with real industry requirements, and generates employability insights.
 
 ---
 
-## Features
+# ✨ Core Features
 
-- Resume Parsing
+## 👨‍🎓 Student Features
+- Resume Upload
 - AI Skill Extraction
 - Skill Gap Analysis
 - Job Readiness Score
-- Placement Prediction
-- Recruiter Matching
-- College Analytics Dashboard
-- AI-Powered Recommendations
+- AI Career Recommendations
+- Placement Readiness Tracking
+
+## 🏫 College Features
+- Department Skill Heatmaps
+- Placement Risk Analytics
+- Batch Readiness Monitoring
+- Performance Dashboards
+
+## 🏢 Recruiter Features
+- AI-ranked Candidate Matching
+- Verified Skill Profiles
+- Hiring Analytics
+- Candidate Shortlisting
 
 ---
 
-## Tech Stack
+# 🧠 AI Capabilities
 
-### Frontend
+- Resume Parsing
+- NLP Skill Detection
+- Placement Prediction
+- Industry Skill Mapping
+- Recommendation Engine
+- Readiness Scoring
+
+---
+
+# 🏗️ System Architecture
+
+```text
+React Frontend
+        ↓
+Spring Boot Backend
+        ↓
+Python AI Microservice
+        ↓
+PostgreSQL Database
+```
+
+---
+
+# 🛠️ Tech Stack
+
+## Frontend
 - React
-- Vite
 - Tailwind CSS
+- Axios
+- Recharts
 
-### Backend
+## Backend
+- Spring Boot
+- Spring Security
+- JWT Authentication
+- Hibernate / JPA
+
+## AI Engine
 - FastAPI
-
-### AI / ML
-- Python
 - spaCy
 - scikit-learn
-- NLP
+- pdfplumber
 
-### Database
+## Database
 - PostgreSQL
 
 ---
 
-## Project Structure
+# 📁 Project Structure
 
-```bash
+```text
 nexora-ai/
 │
-├── client/              # Frontend
-├── server/              # Backend APIs
-├── ml-engine/           # AI & ML models
+├── client/
+├── server/
+├── ai-engine/
 ├── docs/
 ├── screenshots/
 ├── architecture/
@@ -71,23 +107,23 @@ nexora-ai/
 
 ---
 
-## Vision
+# 🎯 Vision
 
 To transform how talent is discovered, developed, and hired using AI-powered employability intelligence.
 
 ---
 
-## Future Scope
+# 📌 Future Scope
 
 - Real-time job scraping
-- Placement prediction models
-- Recruiter dashboards
-- College-wide analytics
-- AI interview analysis
-- Industry trend forecasting
+- AI interview assistant
+- Placement forecasting
+- Multi-college onboarding
+- SaaS deployment
+- Industry hiring analytics
 
 ---
 
-## Author
+# 👨‍💻 Author
 
-Ashraf Mohammad
+Mohammad Ashraf
